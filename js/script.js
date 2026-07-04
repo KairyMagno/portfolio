@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== EMAILJS INITIALIZATION ==========
     (function() {
         if (typeof emailjs !== 'undefined') {
-            emailjs.init('D7vkLWtydyz-mfrO5');
+            emailjs.init('qZDmA1imzHhCAtCrQ');
         }
     })();
     
@@ -208,8 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
             
-            const serviceID = 'service_juqps7v';
-            const templateID = 'template_7rjf1tk';
+            const serviceID = 'service_yfs314h';
+            const templateID = 'template_gym648t';
             
             const templateParams = {
                 from_email: userEmail,
