@@ -6,17 +6,14 @@
   <title>Kairy Ken Magno | Professional Portfolio</title>
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Font Awesome Icons (for professional icons) -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <!-- Google Fonts: Poppins + Inter for clean modern look -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- Devicon for additional technology icons (Tailwind, Flutter, etc.) -->
+  <!-- Devicon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-  <!-- Simple Icons for brand logos -->
+  <!-- Simple Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css" />
-  <!-- Google Fonts for Certificates -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation / Header -->
@@ -31,13 +28,43 @@
         <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
         <a href="#skills" class="nav-link"><i class="fas fa-code-branch"></i> Skills</a>
         <a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> Projects</a>
-        <a href="#certificates" class="nav-link"><i class="fas fa-certificate"></i> Certificates</a>
         <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
       </div>
+      <!-- Replace the theme-toggle-wrapper in your navbar with this -->
       <div class="theme-toggle-wrapper">
-        <button class="theme-btn" id="themeToggle" aria-label="Switch theme">
-          <i class="fas fa-moon" id="themeIcon"></i>
-        </button>
+        <div class="theme-dropdown">
+          <button class="theme-btn" id="themeDropdownBtn" aria-label="Theme settings">
+            <i class="fas fa-palette"></i>
+          </button>
+          <div class="theme-dropdown-menu" id="themeDropdownMenu">
+            <div class="theme-dropdown-header">Choose Theme</div>
+            <button class="theme-option active" data-theme="dark-blue">
+              <span class="theme-dot" style="background: #3B82F6;"></span>
+              <span>Dark Blue</span>
+              <i class="fas fa-check check-icon"></i>
+            </button>
+            <button class="theme-option" data-theme="light">
+              <span class="theme-dot" style="background: #FFFFFF; border: 1px solid #D1D5DB;"></span>
+              <span style="color: white;">Minimal White</span>
+              <i class="fas fa-check check-icon"></i>
+            </button>
+            <button class="theme-option" data-theme="indigo">
+              <span class="theme-dot" style="background: #6366F1;"></span>
+              <span>Indigo Purple</span>
+              <i class="fas fa-check check-icon"></i>
+            </button>
+            <button class="theme-option" data-theme="emerald">
+              <span class="theme-dot" style="background: #10B981;"></span>
+              <span>Emerald Blue</span>
+              <i class="fas fa-check check-icon"></i>
+            </button>
+            <button class="theme-option" data-theme="monochrome">
+              <span class="theme-dot" style="background: #18181B;"></span>
+              <span>Black & White</span>
+              <i class="fas fa-check check-icon"></i>
+            </button>
+          </div>
+        </div>
         <div class="mobile-menu-btn" id="mobileMenuBtn">
           <i class="fas fa-bars"></i>
         </div>
@@ -47,7 +74,7 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section (with profile picture space) -->
+    <!-- Hero Section -->
     <section id="home" class="hero section">
       <div class="container hero-container">
         <div class="hero-content">
@@ -68,12 +95,12 @@
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-down"></i> View Projects</a>
-            <a href="cv/KAIRY-MAGNO-CV.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
+            <a href="resume/Kairy Magno - Resume" download class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
           </div>
           <div class="social-mini">
-            <a href="https://github.com/Kairyyyy" target="_blank" style="font-size: 2rem;"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/kairy-ken-magno-2464193a2/?skipRedirect=true" target="_blank" style="font-size: 2rem;"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://facebook.com/kairy" target="_blank" style="font-size: 2rem;"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/Kairyyyy" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kairy-ken-magno-2464193a2/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://facebook.com/kairy" target="_blank"><i class="fab fa-facebook"></i></a>
           </div>
         </div>
         <div class="hero-image">
@@ -111,13 +138,13 @@
             <p>I'm an aspiring full-stack developer with a passion for building responsive and user-friendly web applications. I have hands-on experience with Laravel and enjoy turning ideas into functional digital solutions.</p>
             <p>I focus on writing clean and maintainable code while continuously improving my skills in both development and design. I'm also exploring game development with Unity and have experience with basic server setup and hardware troubleshooting.</p>
             <a href="#contact" class="btn btn-primary"><i class="fas fa-comment"></i> Let's Connect</a>
-            <a href="cv/KAIRY-MAGNO-CV.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
+            <a href="resume/Kairy Magno - Resume.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section - Icons next to each skill name -->
+    <!-- Skills Section - CAROUSEL -->
     <section id="skills" class="skills section">
       <div class="container">
         <div class="section-header">
@@ -125,125 +152,61 @@
           <h2 class="section-title">Expertise & <span class="blue-accent">Technical Skills</span></h2>
           <div class="section-divider"></div>
         </div>
-        <div class="skills-grid">
-          <!-- Web Development / Frontend -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-globe"></i>
-              <h3>Web Development / Frontend</h3>
+        
+        <!-- Skills Carousel -->
+        <div class="skills-carousel-wrapper">
+          <div class="skills-carousel" id="skillsCarousel">
+            <!-- Track 1 (original) -->
+            <div class="carousel-track" id="carouselTrack1">
+              <div class="skill-item"><i class="fab fa-html5" style="color: #E34F26;"></i><span>HTML5</span></div>
+              <div class="skill-item"><i class="fab fa-css3-alt" style="color: #264DE4;"></i><span>CSS3</span></div>
+              <div class="skill-item"><i class="fab fa-js" style="color: #F7DF1E;"></i><span>JavaScript</span></div>
+              <div class="skill-item"><i class="fab fa-react" style="color: #61DAFB;"></i><span>ReactJS</span></div>
+              <div class="skill-item"><i class="fab fa-bootstrap" style="color: #7952B3;"></i><span>Bootstrap</span></div>
+              <div class="skill-item"><i class="devicon-tailwindcss-plain" style="color: #06B6D4;"></i><span>Tailwind</span></div>
+              <div class="skill-item"><i class="fab fa-php" style="color: #777BB4;"></i><span>PHP/Laravel</span></div>
+              <div class="skill-item"><i class="fab fa-python" style="color: #3776AB;"></i><span>Python</span></div>
+              <div class="skill-item"><i class="fas fa-database" style="color: #4479A1;"></i><span>MySQL</span></div>
+              <div class="skill-item"><i class="fas fa-leaf" style="color: #47A248;"></i><span>MongoDB</span></div>
+              <div class="skill-item"><i class="fab fa-java" style="color: #007396;"></i><span>Java</span></div>
+              <div class="skill-item"><i class="devicon-flutter-plain" style="color: #02569B;"></i><span>Flutter</span></div>
+              <div class="skill-item"><i class="fab fa-unity" style="color: #FFFFFF;"></i><span>Unity</span></div>
+              <div class="skill-item"><i class="fas fa-code"></i><span>C#</span></div>
+              <div class="skill-item"><i class="devicon-blender-original" style="color: #F5792A;"></i><span>Blender</span></div>
+              <div class="skill-item"><i class="fas fa-microchip"></i><span>Arduino</span></div>
+              <div class="skill-item"><i class="fas fa-desktop"></i><span>PC Assembly</span></div>
+              <div class="skill-item"><i class="fas fa-cloud"></i><span>Proxmox</span></div>
+              <div class="skill-item"><i class="fas fa-network-wired"></i><span>Networking</span></div>
+              <div class="skill-item"><i class="fas fa-file-word" style="color: #2B579A;"></i><span>Word</span></div>
+              <div class="skill-item"><i class="fas fa-file-excel" style="color: #21A366;"></i><span>Excel</span></div>
+              <div class="skill-item"><i class="fas fa-brain"></i><span>Problem-Solving</span></div>
+              <div class="skill-item"><i class="fas fa-users"></i><span>Teamwork</span></div>
             </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="fab fa-html5" style="color: #E34F26;"></i> HTML5</span>
-              <span class="skill-tag"><i class="fab fa-css3-alt" style="color: #264DE4;"></i> CSS3</span>
-              <span class="skill-tag"><i class="fab fa-js" style="color: #F7DF1E;"></i> JavaScript</span>
-              <span class="skill-tag"><i class="fab fa-react" style="color: #61DAFB;"></i> ReactJS</span>
-              <span class="skill-tag"><i class="fab fa-bootstrap" style="color: #7952B3;"></i> Bootstrap</span>
-              <span class="skill-tag"><i class="devicon-tailwindcss-plain" style="color: #06B6D4;"></i> Tailwind</span>
-              <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
-              <span class="skill-tag"><i class="fas fa-paint-brush"></i> UI/UX Design Principles</span>
-            </div>
-          </div>
-
-          <!-- Backend / Databases -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-server"></i>
-              <h3>Backend / Databases</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="fab fa-php" style="color: #777BB4;"></i> PHP (Laravel Framework)</span>
-              <span class="skill-tag"><i class="fab fa-python" style="color: #3776AB;"></i> Python (Web Dev/Scripting)</span>
-              <span class="skill-tag"><i class="fas fa-database" style="color: #4479A1;"></i> MySQL</span>
-              <span class="skill-tag"><i class="fas fa-leaf" style="color: #47A248;"></i> MongoDB</span>
-              <span class="skill-tag"><i class="fas fa-plug"></i> REST APIs</span>
-              <span class="skill-tag"><i class="fas fa-layer-group"></i> MVC Architecture</span>
-            </div>
-          </div>
-
-          <!-- Programming Fundamentals (NEW CATEGORY) -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-code"></i>
-              <h3>Programming Fundamentals</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="fab fa-java" style="color: #007396;"></i> Java (OOP)</span>
-            </div>
-          </div>
-
-          <!-- Mobile & App Development -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-mobile-alt"></i>
-              <h3>Mobile & App Development</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="devicon-flutter-plain" style="color: #02569B;"></i> Flutter</span>
-            </div>
-          </div>
-
-          <!-- Game Development -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-gamepad"></i>
-              <h3>Game Development</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="fab fa-unity" style="color: #FFFFFF;"></i> Unity</span>
-              <span class="skill-tag"><i class="fas fa-code"></i> C# (Unity Scripting)</span>
-            </div>
-          </div>
-
-          <!-- 3D & Design -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-cube"></i>
-              <h3>3D & Design</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="devicon-blender-original" style="color: #F5792A;"></i> Blender</span>
-            </div>
-          </div>
-
-          <!-- Hardware / IT / DevOps -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-microchip"></i>
-              <h3>Hardware / IT / DevOps</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="fas fa-microchip"></i> Arduino (Embedded Systems)</span>
-              <span class="skill-tag"><i class="fas fa-desktop"></i> PC & Server Assembly</span>
-              <span class="skill-tag"><i class="fas fa-cloud"></i> Proxmox / Virtual Machines</span>
-              <span class="skill-tag"><i class="fas fa-network-wired"></i> Network Basics</span>
-            </div>
-          </div>
-
-          <!-- Productivity & Office -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-file-alt"></i>
-              <h3>Productivity & Office</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="fas fa-file-word" style="color: #2B579A;"></i> Microsoft Word</span>
-              <span class="skill-tag"><i class="fas fa-file-excel" style="color: #21A366;"></i> Microsoft Excel</span>
-              <span class="skill-tag"><i class="fas fa-file-powerpoint" style="color: #D24726;"></i> PowerPoint</span>
-            </div>
-          </div>
-
-          <!-- Soft Skills -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-users"></i>
-              <h3>Soft Skills</h3>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><i class="fas fa-brain"></i> Problem-Solving</span>
-              <span class="skill-tag"><i class="fas fa-eye"></i> Attention to Detail</span>
-              <span class="skill-tag"><i class="fas fa-comments"></i> Communication</span>
-              <span class="skill-tag"><i class="fas fa-users-cog"></i> Team Collaboration</span>
-              <span class="skill-tag"><i class="fas fa-graduation-cap"></i> Continuous Learning</span>
+            <!-- Track 2 (duplicate for seamless loop) -->
+            <div class="carousel-track" id="carouselTrack2">
+              <div class="skill-item"><i class="fab fa-html5" style="color: #E34F26;"></i><span>HTML5</span></div>
+              <div class="skill-item"><i class="fab fa-css3-alt" style="color: #264DE4;"></i><span>CSS3</span></div>
+              <div class="skill-item"><i class="fab fa-js" style="color: #F7DF1E;"></i><span>JavaScript</span></div>
+              <div class="skill-item"><i class="fab fa-react" style="color: #61DAFB;"></i><span>ReactJS</span></div>
+              <div class="skill-item"><i class="fab fa-bootstrap" style="color: #7952B3;"></i><span>Bootstrap</span></div>
+              <div class="skill-item"><i class="devicon-tailwindcss-plain" style="color: #06B6D4;"></i><span>Tailwind</span></div>
+              <div class="skill-item"><i class="fab fa-php" style="color: #777BB4;"></i><span>PHP/Laravel</span></div>
+              <div class="skill-item"><i class="fab fa-python" style="color: #3776AB;"></i><span>Python</span></div>
+              <div class="skill-item"><i class="fas fa-database" style="color: #4479A1;"></i><span>MySQL</span></div>
+              <div class="skill-item"><i class="fas fa-leaf" style="color: #47A248;"></i><span>MongoDB</span></div>
+              <div class="skill-item"><i class="fab fa-java" style="color: #007396;"></i><span>Java</span></div>
+              <div class="skill-item"><i class="devicon-flutter-plain" style="color: #02569B;"></i><span>Flutter</span></div>
+              <div class="skill-item"><i class="fab fa-unity" style="color: #FFFFFF;"></i><span>Unity</span></div>
+              <div class="skill-item"><i class="fas fa-code"></i><span>C#</span></div>
+              <div class="skill-item"><i class="devicon-blender-original" style="color: #F5792A;"></i><span>Blender</span></div>
+              <div class="skill-item"><i class="fas fa-microchip"></i><span>Arduino</span></div>
+              <div class="skill-item"><i class="fas fa-desktop"></i><span>PC Assembly</span></div>
+              <div class="skill-item"><i class="fas fa-cloud"></i><span>Proxmox</span></div>
+              <div class="skill-item"><i class="fas fa-network-wired"></i><span>Networking</span></div>
+              <div class="skill-item"><i class="fas fa-file-word" style="color: #2B579A;"></i><span>Word</span></div>
+              <div class="skill-item"><i class="fas fa-file-excel" style="color: #21A366;"></i><span>Excel</span></div>
+              <div class="skill-item"><i class="fas fa-brain"></i><span>Problem-Solving</span></div>
+              <div class="skill-item"><i class="fas fa-users"></i><span>Teamwork</span></div>
             </div>
           </div>
         </div>
@@ -251,57 +214,124 @@
     </section>
 
     <!-- Projects Section -->
-  <section id="projects" class="projects section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Recent work</span>
-        <h2 class="section-title">Featured <span class="blue-accent">Projects</span></h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="projects-grid">
-        <!-- Project Card 1 -->
-        <a href="https://www.youtube.com/watch?v=XxoQJfI3ArE&t=25s" target="_blank" class="project-card" rel="noopener noreferrer">
-          <div class="project-img">
-            <img src="images/FindingIsabel.png" alt="The Finding of Isabel">
-            <div class="project-img-overlay">
-              <i class="fas fa-play-circle"></i>
-              <span>Watch Gameplay</span>
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Recent work</span>
+          <h2 class="section-title">Featured <span class="blue-accent">Projects</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Project Card 1: Finding Isabel -->
+          <div class="project-card">
+            <div class="project-img" data-lightbox="images/FindingIsabel.png" data-title="The Finding of Isabel - Gameplay Screenshot">
+              <img src="images/FindingIsabel.png" alt="The Finding of Isabel">
+              <div class="project-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>🎮 The Finding of Isabel</h3>
+              <p>A 3D single-player psychological horror game built with Unity and C# as a capstone project (2024–2025). Features exploration, puzzles, and immersive storytelling. Awarded Best Software Development Study.</p>
+              <div class="project-tags"><span>C#</span><span>Unity</span><span>Blender</span></div>
+              <div class="project-links">
+                <a href="https://github.com/KairyMagno/finding-isabel-horror-game" target="_blank" rel="noopener noreferrer" class="project-link github-link" title="View GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=XxoQJfI3ArE&t=25s" target="_blank" rel="noopener noreferrer" class="project-link youtube-link" title="Watch Gameplay Demo">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>      
+          
+          <!-- Project Card 2: HoopsHub -->
+          <div class="project-card">
+            <div class="project-img" data-lightbox="images/hoops.png" data-title="HoopsHub - Basketball Gym Management App">
+              <img src="images/hoops.png" alt="HoopsHub">
+              <div class="project-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>🏀 HoopsHub</h3>
+              <p>A Flutter-based mobile application for managing basketball gym operations. Features coach management, equipment inventory, training schedules, and court information.</p>
+              <div class="project-tags"><span>Flutter</span><span>Dart</span><span>Android Studio</span></div>
+              <div class="project-links">
+                <a href="https://github.com/KairyMagno/HoopsHub-Mobile" target="_blank" rel="noopener noreferrer" class="project-link github-link" title="View GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="project-divider"></div>
-          <div class="project-info">
-            <h3>The Finding of Isabel</h3>
-            <p>A 3D single-player horror game built with Unity and C# as a capstone project (2024–2025). Featuring a 3D model of the University of Rizal System (Binangonan Campus), exploration, puzzles, and immersive storytelling.</p>
-            <div class="project-tags"><span>C#</span><span>Unity</span><span>Blender</span></div>
-          </div>
-        </a>      
-        
-        <!-- Project Card 2 -->
-        <a href="https://www.youtube.com/shorts/fCwaNGsBXPI" target="_blank" class="project-card" rel="noopener noreferrer">
-          <div class="project-img">
-            <img src="images/HoopsHub.jpg" alt="Project Name">
-            <div class="project-img-overlay">
-              <i class="fas fa-play-circle"></i>
-              <span>Watch HOOPS Hub</span>
-            </div>
-          </div>
-          <div class="project-divider"></div>
-          <div class="project-info">
-            <h3>HOOPS Hub</h3>
-            <p>Manufacturing Software – A simple academic project designed to help demonstrate how businesses can monitor production processes, improve workflow organization, and support basic quality control in a manufacturing setup. This system was created for educational purposes as part of a school requirement.</p>
-            <div class="project-tags"><span>Android Studio</span><span>Flutter</span><span>Virtual Device</span></div>
-          </div>
-        </a>      
-      </div>
-    </div>
-  </section>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox-modal" class="lightbox-modal">
-      <span class="close-lightbox">&times;</span>
-      <img class="lightbox-content" id="lightbox-img">
-      <div class="lightbox-caption" id="lightbox-caption"></div>
-    </div>
+          <!-- Project Card 3: RizalAgriCultiva -->
+          <div class="project-card">
+            <div class="project-img" data-lightbox="images/AgriCultiva_LandingPage.png" data-title="RizalAgriCultiva - Agriculture Information System">
+              <img src="images/AgriCultiva_LandingPage.png" alt="RizalAgriCultiva" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,#2d6a4f,#40916c);color:white;font-size:3rem;\'><i class=\'fas fa-seedling\'></i></div>';">
+              <div class="project-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>🌾 RizalAgriCultiva</h3>
+              <p>A web-based Agriculture Information and Management System built with PHP and MySQL. Features an administrator dashboard for managing announcements, articles, multimedia, FAQs, and generating PDF reports.</p>
+              <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>PHPMailer</span></div>
+              <div class="project-links">
+                <a href="https://github.com/KairyMagno/Rizal-Agriculture-Management-System" target="_blank" rel="noopener noreferrer" class="project-link github-link" title="View GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4: AI Resume Analyzer -->
+          <div class="project-card">
+            <div class="project-img" data-lightbox="images/n8n-resume-automation.png" data-title="AI Resume Analyzer - Recruitment Automation">
+              <img src="images/n8n-resume-automation.png" alt="AI Resume Analyzer" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,#4f46e5,#7c3aed);color:white;font-size:3rem;\'><i class=\'fas fa-robot\'></i></div>';">
+              <div class="project-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>🤖 AI Resume Analyzer</h3>
+              <p>An end-to-end recruitment automation system built with n8n and Groq AI (Llama 3.1). Automates resume screening, IT developer classification, duplicate detection, and automated email notifications via Google Sheets and Gmail.</p>
+              <div class="project-tags"><span>n8n</span><span>Groq AI</span><span>Google APIs</span><span>Llama 3.1</span></div>
+              <div class="project-links">
+                <a href="https://github.com/KairyMagno/n8n-resume-automation" target="_blank" rel="noopener noreferrer" class="project-link github-link" title="View GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5: DTR Management System -->
+          <div class="project-card">
+            <div class="project-img" data-lightbox="images/dtr.png" data-title="DTR Management System - Daily Time Record">
+              <img src="images/dtr.png" alt="DTR Management System" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,#0f172a,#1e293b);color:white;font-size:3rem;\'><i class=\'fas fa-clock\'></i></div>';">
+              <div class="project-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>⏱️ DTR Management System</h3>
+              <p>A full-featured Daily Time Record system built with Laravel 11, Tailwind CSS, and Alpine.js. Features employee/admin portals, clock-in/out, leave management, holiday calendar, and announcement broadcasting.</p>
+              <div class="project-tags"><span>Laravel 11</span><span>Tailwind CSS</span><span>Alpine.js</span><span>MySQL</span></div>
+              <div class="project-links">
+                <a href="https://github.com/KairyMagno/dtr-management-system" target="_blank" rel="noopener noreferrer" class="project-link github-link" title="View GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -316,7 +346,7 @@
             <i class="fas fa-comment" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
             <p style="line-height: 1.6; margin-bottom: 1.5rem;">I'm a recent graduate passionate about web and game development. If you'd like to collaborate, share ideas, or just say hi, feel free to reach out to me via email—I'm always happy to connect!</p>
             <div class="contact-detail">
-              <i class="fas fa-envelope"></i> kairykenm@gmail.com
+              <i class="fas fa-envelope"></i> kairymagno@gmail.com
             </div>
             <div class="contact-detail">
               <i class="fas fa-phone-alt"></i> +63 (915) 957-4952
@@ -325,9 +355,9 @@
               <i class="fas fa-map-marker-alt"></i> Philippines
             </div>
             <div class="social-mini" style="margin-top: 2rem;">
-              <a href="https://github.com/Kairyyyy" target="_blank" style="color: white; font-size: 1.5rem;"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/kairy-ken-magno-2464193a2/?skipRedirect=true" target="_blank" style="color: white; font-size: 1.5rem;"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://facebook.com/kairy" target="_blank" style="color: white; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/Kairyyyy" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/kairy-ken-magno-2464193a2/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://facebook.com/kairy" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
           </div>
           <div class="contact-right">
@@ -350,16 +380,19 @@
     </div>
   </footer>
 
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
   <!-- Chatbot Widget -->
   <div class="chatbot-widget" id="chatbotWidget">
-    <!-- Chatbot Toggle Button -->
     <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat">
       <i class="fas fa-robot"></i>
     </button>
-    
-    <!-- Chatbot Container -->
     <div class="chatbot-container" id="chatbotContainer">
-      <!-- Chatbot Header -->
       <div class="chatbot-header">
         <div class="chatbot-header-left">
           <div class="chatbot-avatar">
@@ -374,8 +407,6 @@
           <i class="fas fa-times"></i>
         </button>
       </div>
-      
-      <!-- Chat Messages Area -->
       <div class="chatbot-messages" id="chatbotMessages">
         <div class="chatbot-message bot-message">
           <div class="message-content">
@@ -383,8 +414,6 @@
           </div>
         </div>
       </div>
-      
-      <!-- Predefined Questions -->
       <div class="chatbot-questions" id="chatbotQuestions">
         <button class="question-btn" data-question="about">👤 Tell me about Kairy</button>
         <button class="question-btn" data-question="skills">💻 What are his skills?</button>
@@ -392,7 +421,6 @@
         <button class="question-btn" data-question="experience">📋 Work experience</button>
         <button class="question-btn" data-question="education">🎓 Education</button>
         <button class="question-btn" data-question="contact">📧 How to contact him?</button>
-        <button class="question-btn" data-question="certificates">📜 Certificates</button>
         <button class="question-btn" data-question="game">🎮 Game development</button>
       </div>
     </div>
@@ -404,4 +432,3 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>
-```
